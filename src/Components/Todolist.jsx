@@ -133,7 +133,7 @@ function Todolist() {
  
           return (showFinished || !item.isCompleted) && <div key={item.id} className={"todo flex my-3 justify-between"}>
             <div className='showTodo '> 
-            <input name={item.id} onChange={handleCheckbox} type="checkbox" checked={item.isCompleted} id="" />
+            <input className='Checkbox-todo' name={item.id} onChange={handleCheckbox} type="checkbox" checked={item.isCompleted} id="" />
             <div className={item.isCompleted?"line-through":""}>{item.todo}</div>
             </div>
             <div className="todo-buttons">
