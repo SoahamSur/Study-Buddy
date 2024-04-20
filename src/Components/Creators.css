@@ -1,0 +1,117 @@
+.Creators{
+    display: flex;
+    padding: 80px 0px 0px 0px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    gap: 8px;
+    background: inherit;
+}
+.card-creator {
+    width: 290px;
+    height: 417px;
+    background:#480CA8;
+    border-radius: 10px;
+    /* box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.333); */
+  }
+  
+  .imge {
+    height: 221px;
+    background-color: #4895EF;
+  }
+  
+  .imge .Usericon {
+    background-color: #414141;
+    transform: translateX(10px) translateY(10px);
+    width: 160px;
+    height: 180px;
+    border-radius: 10px;
+  }
+  
+  .imge .UserName {
+    width: 88px;
+    margin-left: 110px;
+    height: 30px;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+    transform: translateX(70px) translateY(-130px);
+  }
+  
+  .imge .Id {
+    margin-left: 103px;
+    width: 104px;
+    height: 15px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    font-weight:500;
+    transform: translateX(70px) translateY(-90px);
+  }
+  
+  .Description {
+    border-color: white;
+    background-color: #480CA8;
+    transform: translate(5px, 6px);
+    width: 280px;
+    height: 138px;
+    border-radius: 5px;
+  }
+  .cre-desc{
+    text-align: center;
+    padding: 0;
+    font-size: 14px;
+  }
+  /*______Social Media______*/
+  .social-media-pers:before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 2px;
+    transform: translatey(10px);
+    background: #414141;
+  }
+  
+  .social-media-pers a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .social-media-pers a:last-child {
+    margin-right: 0;
+  }
+  
+  .social-media-pers a svg {
+    color: #4CC9F0;
+    transform: translatex(25px) translateY(20px);
+    width: 20px;
+    fill: currentColor;
+  }
+
+  .Cret-img{
+    width: 160px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    zoom: 101%;
+    box-shadow:  2px 3px 13px #480CA8;
+  }
+  .Cret1-img{
+    width: 160px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    
+    box-shadow:  2px 3px 13px #480CA8;
+  }
+  @media screen and (max-width:700px){
+    .Creators{
+        display: grid;
+        justify-content: center;
+        padding: 18px 0px 0px 0px;
+        margin-bottom: 20px;
+        gap: 30px;
+    }
+  } 

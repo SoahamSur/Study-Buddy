@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  /* background-color: #230438; */
+  background:linear-gradient(80deg,#230438,#A74CF2,#3963D7);
+  background-repeat:inherit;
+}
+/* .break{
+  width: 50vw;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.438);
+  height: 3px;
+  display: flex;
+  margin: auto;
+  border-radius: 119px;
+} */

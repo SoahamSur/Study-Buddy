@@ -1,0 +1,153 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins",sans-serif;
+  font-size: 18px;
+}
+
+/* navbar */
+.navbar {
+  background-color: transparent;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  flex: 1;
+  min-height: 70px;
+}
+nav li:hover{
+font-weight: 500;
+  /* box-shadow: #7209B7 1px 0 10px; */
+}
+
+/* logo  */
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Poppins",sans-serif;
+}
+
+
+/* ul  */
+.navMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+/* Dropdown arrow hover effect */
+.navLink:hover + .dropdownContent,
+.dropdownContent:hover {
+  display: block;
+  transition: 0.7s ease-in;
+}
+
+/* Dropdown content */
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #560BAD;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 18px;
+  margin-top: 0px;
+}
+
+.dropdownContent ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdownContent li {
+  margin: 8px 0;
+}
+
+.dropdownContent a {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+/* .dropdownText:hover{
+  text-decoration: underline;
+} */
+.dropdownContent a:hover {
+  color: #4cc9f0;
+
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 780px){
+  
+  /* hamburger */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .navbar{
+    background-color: #560BAD;
+  }
+
+  .bar {
+        background-color: #4CC9F0;
+        width: 20px;
+        height: 3px;
+        display: block;
+        margin: 5px;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+    }
+
+  /* adding active class to the bars  */
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+
+  /* navMenu */
+
+  .navMenu{
+    position: absolute;
+    flex-direction: column;
+    gap: 0;
+    top: 70px;
+    left: -100%;
+    text-align: start;
+    width: 100%;
+    z-index: 1;
+    transition: 0.7s ease-in-out;
+    background-color: #560BAD;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .navMenu.active{
+    left: 0;
+  }
+
+  .navMenu li {
+    margin: 16px 0;
+  }
+}

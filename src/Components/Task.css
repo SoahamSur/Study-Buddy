@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.Task-sche {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 20px;
+  height: 170vh;
+  background-image: inherit;
+  /* background-image: linear-gradient(
+    to right,
+    rgb(90, 24, 154),
+    rgb(199, 125, 255)
+  ); */
+  color: white;
+}
+
+.task-title {
+  text-align: center;
+}
+
+.addTaskbtn {
+  display: grid;
+  width: 61%;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 16px;
+  align-items: center;
+  border: none;
+  border-radius: 7px;
+}
+.date-inp{
+  display: grid;
+  width: 61%;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 16px;
+  align-items: center;
+  border: none;
+  border-radius: 7px;
+}
+.inp-text{
+  transition: all ease;
+  display: grid;
+  width: 61%;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 16px;
+  align-items: center;
+  border: none;
+  border-radius: 7px;
+}
+.inp-text:focus {
+  color: rgb(255, 255, 255);
+  background-color: #21212157;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 15px rgb(0, 255, 255);
+  transition: .1s;
+  transition-property: box-shadow;
+}
+.date-inp:focus {
+  color: rgb(255, 255, 255);
+  background-color: #21212157;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 15px rgb(0, 255, 255);
+  transition: .1s;
+  transition-property: box-shadow;
+}
+.addTaskbtn {
+  display: block;
+  margin: 37px auto;
+  cursor: pointer;
+  background-color: #7209b7;
+  color: white;
+  border: none;
+  width: 40vw;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.addTaskbtn:hover {
+  background-color: #a820e7;
+}
+.tasks-ul {
+  list-style-type: none;
+  display: grid;
+  padding: 4px 0px 0 0;
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.taskItem {
+  /* gap: 72px; */
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  max-width: 55vw;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.date-align {
+  width: 30vw;
+  text-align: center;
+}
+.taskItem button {
+  background-color: #f44336;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 111px;
+  cursor: pointer;
+}
+.Task-edit {
+  width: 4rem;
+}
+.Task-delete {
+  width: 4rem;
+}
+.btn-cont {
+  display: flex;
+  gap: 5px;
+}
+/* Add this style to customize the appearance of the datetime-local input */
+input[type="datetime-local"] {
+  width: 61%;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the calendar icon */
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  background-color: #1d0a3c70;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media only screen and (max-width:600px) {
+  .taskItem{
+    max-width:75vw;
+  }
+  .addTaskbtn{
+    box-shadow: 0px 3px 14px #6157FF;   }
+}
+.edited{
+  transition: all 0.3s ease;
+}
+.edited:focus{
+  color: white;
+  background-color:#7109b7d0 ;
+}

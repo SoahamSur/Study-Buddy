@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-color: #230438;
+    background:linear-gradient(80deg,#240538,#3a085c,#4ccaf0da);
+    background-repeat:inherit;
+  }
+  /* .break{
+    width: 50vw;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.438);
+    height: 3px;
+    display: flex;
+    margin: auto;
+    border-radius: 119px;
+  } */
+  
