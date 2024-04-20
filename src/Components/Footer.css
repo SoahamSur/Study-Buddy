@@ -104,6 +104,12 @@ ul {
   /* background-color: #4361ee; */
   padding: 50px 0px 6px 0px;
 }
+@media screen and (max-width: 700px){
+  .footer {
+  /* background-color: #4361ee; */
+  padding: 100px 0px 6px 0px;
+}
+}
 .cpyrt {
   /* padding: 20px; */
   text-align: center;
