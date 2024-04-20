@@ -124,3 +124,8 @@
     height: 121vh;
   }
 }
+
+.Checkbox-todo{
+  height: 12px;
+    align-self: center;
+}
